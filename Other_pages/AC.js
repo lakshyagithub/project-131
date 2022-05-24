@@ -2,7 +2,7 @@ var status1 = "";
 var img = "";
 
 function preload() {
-  img = loadImage("/AC.jpg");
+  img = loadImage("AC.jpg");
 }
 
 function setup() {
