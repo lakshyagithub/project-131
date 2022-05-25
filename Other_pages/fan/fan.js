@@ -2,7 +2,7 @@ var status1 = "";
 var img = "";
 
 function preload() {
-  img = loadImage("/AC.jpg");
+  img = loadImage("fan.jpg");
 }
 
 function setup() {
@@ -11,6 +11,10 @@ function setup() {
 
   objectDetector = ml5.objectDetector('cocossd', modelLoaded);
   document.getElementById('status').innerHTML = "Detecting Objects";
+}
+
+function draw() {
+  image(img, 0, 0, 400, 400);
 }
 
 function modelLoaded() {
