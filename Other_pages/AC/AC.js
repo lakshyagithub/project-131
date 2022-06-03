@@ -4,10 +4,6 @@ var img = ""; //image
 //let confidence = 0;
 objects = []; //array of objects
 
-var status1 = "";
-var img = "";
-objects = [];
-
 
 function preload() {
   img = loadImage("https://i.postimg.cc/R0VbMw7g/AC.jpg"); //load image
