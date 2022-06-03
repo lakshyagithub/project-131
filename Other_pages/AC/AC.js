@@ -1,7 +1,13 @@
+
 var status1 = ""; //status of the model
 var img = ""; //image
 //let confidence = 0;
 objects = []; //array of objects
+
+var status1 = "";
+var img = "";
+objects = [];
+
 
 function preload() {
   img = loadImage("https://i.postimg.cc/R0VbMw7g/AC.jpg"); //load image
@@ -15,6 +21,7 @@ function setup() {
 }
 
 function draw() {
+
   image(img, 0, 0, 600, 400); //display image
   if (status1 != "") { //if status is not empty
     console.log("Objects number : ", objects.length); //log number of objects
@@ -30,6 +37,11 @@ function draw() {
     }  //for each object
     
 }
+  image(img, 0, 0, 400, 400);
+  if (status1) {
+    
+  }
+
 }
 function modelLoaded() {
   console.log("cocossd is ready!"); //log model is ready
