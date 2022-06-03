@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  canvas = createCanvas(600, 400); //create canvas
+  canvas = createCanvas(400, 400); //create canvas
   canvas.center(); //center canvas
   objectDetector = ml5.objectDetector('cocossd', modelLoaded); //load model
   document.getElementById('status').innerHTML = "Detecting Objects"; //set status
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-  image(img, 0, 0, 600, 400); //display image
+  image(img, 0, 0, 400, 400); //display image
   if (status1 != "") { //if status is not empty
     console.log("Objects number : ", objects.length); //log number of objects
     for (var i = 0; i < objects.length; i++){
