@@ -1,5 +1,6 @@
 var status1 = "";
 var img = "";
+objects = [];
 
 function preload() {
   img = loadImage("https://i.postimg.cc/R0VbMw7g/AC.jpg");
@@ -15,6 +16,9 @@ function setup() {
 
 function draw() {
   image(img, 0, 0, 400, 400);
+  if (status1) {
+    
+  }
 }
 
 function modelLoaded() {
